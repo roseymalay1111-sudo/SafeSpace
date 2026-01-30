@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f8fefe;
+    color: #333;
+}
+
+.page-soft-bg {
+    background-color: #F6FBFA;
+}
+
+
+/* ================= HERO SECTION FOR Index Page ================= */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)),
+        url("https://images.unsplash.com/photo-1529333166437-7750a6dd5a70");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.hero-content {
+    max-width: 600px;
+    color: white;
+    animation: fadeSlide 1.5s ease forwards;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-buttons button {
+    padding: 14px 28px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #3cbdb1;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #333;
+}
+
+.hero-buttons button:hover {
+    transform: translateY(-3px);
+}
+
+.system-message {
+    background: #f2fefe;
+    border-left: 4px solid #2fa39a;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 0.95em;
+    color: #333;
+}
+
+.chat-body {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+/* ================= INFO SECTION ================= */
+.info {
+    margin: 3%;
+    padding: 80px 60px;
+    text-align: center;
+    background: lightblue;
+}
+
+.info h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.info p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* ===== Learn Banner ===== */
+.carousel-item {
+    height: 70vh;
+    /* or 60vh if you want shorter */
+    min-height: 400px;
+    /* prevent too small on short screens */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* dark semi-transparent circle */
+    border-radius: 50%;
+    /* circular button */
+    background-size: 50%, 50%;
+    /* icon size inside circle */
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    content: '';
+    /* hide default arrow if needed */
+}
+
+/* ====== Learn Page ===== */
+.awareness-img {
+    max-width: 420px;
+    border-radius: 18px;
+    box-shadow:
+        0 20px 35px rgba(0, 0, 0, 0.18),
+        0 8px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.awareness-img:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow:
+        0 30px 50px rgba(0, 0, 0, 0.25),
+        0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+.selfcare-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.selfcare-card:hover {
+    transform: translateY(-4px);
+}
+
+.selfcare-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.hidden-text {
+    display: none;
+    color: #4a5f5f;
+    font-size: 0.95em;
+}
+
+.selfcare-card.active .hidden-text {
+    display: block;
+}
+
+.btn-outline-teal {
+    border: 1px solid #2fa39a;
+    color: #2fa39a;
+}
+
+.btn-outline-teal:hover {
+    background: #2fa39a;
+    color: white;
+}
+
+/* VIDEO HOVER */
+.video-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* self care */
+.selfcare-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.12);
+    transition: all 0.4s ease;
+}
+
+.selfcare-card:hover img {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
