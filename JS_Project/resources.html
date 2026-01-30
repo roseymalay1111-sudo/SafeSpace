@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeSpace</title>
+  <link rel="icon" type="image/png" href="media/b33792f2-5270-4ea4-b4cc-b63a16b8f6db.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="page-soft-bg"></section>
+  <section class="container py-5 mt-5 pt-4">
+
+    <header class="fixed-top" id="header">
+      <nav class="navbar navbar-expand-lg navbar-light px-4" style="background: transparent;">
+
+        <!-- LOGO -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="media/favicon.png" alt="logo" style="width:12vw;height:auto;">
+          <span class="fs-4 fw-semibold text-dark">SafeSpace</span>
+        </a>
+
+        <!-- HAMBURGER -->
+        <button class="navbar-toggler border-0 navbar-light" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mobileNav">
+          <span class="fs-2" style="color:#1f2a44;">☰</span>
+        </button>
+
+        <!-- DESKTOP NAV -->
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="get_support.html">Get Support</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="safe_space.html">Safe Space</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="learn.html">Learn</a></li>
+            <li class="nav-item">
+              <a class="nav-link active btn btn-sm px-3" style="background:#1f2a44;color:#fff;" href="resources.html">
+                Resources
+              </a>
+            </li>
+            <li class="nav-item"><a class="nav-link text-dark" href="reach_out.html">Reach Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- mobile slide in menu -->
+    <div class="offcanvas offcanvas-end text-bg-secondary-subtle" id="mobileNav" style="max-width: 280px;">
+
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">SafeSpace</h5>
+        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"></button>
+      </div>
+
+      <div class="offcanvas-body" style="
+          scrollbar-width: thin;
+          scrollbar-color: #1f2a44 transparent;
+        ">
+        <ul class="navbar-nav gap-2">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="get_support.html">Get Support</a></li>
+          <li><a class="nav-link" href="safe_space.html">Safe Space</a></li>
+          <li><a class="nav-link" href="learn.html">Learn</a></li>
+          <li>
+            <a class="nav-link btn" style="background:#1f2a44;color:#fff;" href="resources.html">
+              Resources
+            </a>
+          </li>
+          <li><a class="nav-link" href="reach_out.html">Reach Out</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Title & Card -->
+    <section class="container py-5 mt-5">
+      <div class="mb-5">
+        <h1 class="fw-bold mb-2">Trusted Resources</h1>
+        <p class="text-muted col-md-8">
+          Carefully selected helplines, counseling services, legal guidance,
+          and emergency support to help you stay safe and informed.
+        </p>
+      </div>
+
+      <div class="row g-4" id="resourceCards">
+
+        <div class="col-md-3">
+          <div class="card h-100 border-0 shadow-lg p-3 resource-card" role="button" data-bs-toggle="modal"
+            data-bs-target="#helplineModal">
+            <div class="card-body">
+              <h6 class="fw-semibold mb-2">📞 Helplines</h6>
+              <p class="text-muted mb-0">
+                24/7 confidential crisis lines offering immediate emotional support
+                and guidance.
+              </p>
+              <ul>
+                <li>Immediate emotional support</li>
+                <li>Anonymous conversations</li>
+                <li>Local & international resources</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100 border-0 shadow-lg p-3 resource-card" role="button" data-bs-toggle="modal"
+            data-bs-target="#counselingModal" style="background: linear-gradient(135deg, #f8f9fa, #eef7f3);">
+            <div class="card-body">
+              <h6 class="fw-semibold mb-2">🧠 Counseling</h6>
+              <p class="text-muted mb-0">
+                Access licensed therapists and trauma-informed mental health care.
+              </p>
+              <ul>
+                <li>One-on-one confidential counseling sessions</li>
+                <li>Support for trauma, anxiety, depression, and stress</li>
+                <li>Licensed professionals trained in crisis response</li>
+                <li>Teletherapy and in-person options</li>
+                <li>Guidance for long-term mental wellness
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100 border-0 shadow-lg p-3 resource-card" role="button" data-bs-toggle="modal"
+            data-bs-target="#legalModal" style="background: linear-gradient(135deg, #f8f9fa, #f3f0fa);">
+            <div class="card-body">
+              <h6 class="fw-semibold mb-2">⚖ Legal Help</h6>
+              <p class="text-muted mb-0">
+                Understand your rights, reporting options, and legal protections.
+              </p>
+              <ul>
+                <li>Guidance on reporting incidents safely and confidentially</li>
+                <li>Legal advocacy and support through the justice system</li>
+                <li>Assistance with protective orders or restraining orders</li>
+                <li>Access to pro bono or low-cost legal aid</li>
+                <li>Advice on workplace, housing, and family law rights</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100 border-0 shadow-lg p-3 resource-card" role="button" data-bs-toggle="modal"
+            data-bs-target="#emergencyModal" style="background: linear-gradient(135deg, #f8f9fa, #fdeeee);">
+            <div class="card-body">
+              <h6 class="fw-semibold mb-2">🚨 Emergency</h6>
+              <p class="text-muted mb-0">
+                Immediate assistance for urgent situations or personal danger.
+              </p>
+              <ul>
+                <li>24/7 crisis intervention for life-threatening situations</li>
+                <li>Quick access to emergency shelters or safe spaces</li>
+                <li>Connection with first responders and medical services</li>
+                <li>Rapid safety planning and evacuation support</li>
+                <li>Support for individuals facing domestic violence, assault, or other urgent risks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ==Footer=== -->
+  <footer class="bg-light text-center py-4 mt-5">
+    © 2026 SafeSpace | All Rights Reserved
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

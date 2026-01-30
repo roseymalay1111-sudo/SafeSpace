@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSpace</title>
+    <link rel="icon" type="image/png" href="media/b33792f2-5270-4ea4-b4cc-b63a16b8f6db.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* Only on learn.html page */
+      body.overlay-navbar-page .fixed-top {
+        background: transparent;
+        /* transparent so banner shows through */
+        position: fixed;
+        /* fixed at top */
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        /* stay above banner */
+      }
+    </style>
+  </head>
+
+  <body class="overlay-navbar-page">
+
+    <section class="page-soft-bg"></section>
+    <section class="container py-2 mt-5 pt-4"></section>
+
+    <header class="fixed-top" id="header">
+      <nav class="navbar navbar-expand-lg navbar-light px-4" style="background: transparent;">
+
+        <!-- LOGO -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="media/favicon.png" alt="logo" style="width:12vw;height:auto;">
+          <span class="fs-4 fw-semibold text-dark">SafeSpace</span>
+        </a>
+
+        <!-- HAMBURGER -->
+        <button class="navbar-toggler border-0 navbar-light" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mobileNav">
+          <span class="fs-2" style="color:#1f2a44;">☰</span>
+        </button>
+
+        <!-- DESKTOP NAV -->
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="get_support.html">Get Support</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="safe_space.html">Safe Space</a></li>
+            <li class="nav-item">
+              <a class="nav-link active btn btn-sm px-3" style="background:#1f2a44;color:#fff;"
+                href="learn.html">Learn</a>
+            </li>
+            <li class="nav-item "><a class="nav-link text-dark" href="resources.html"> Resources</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="reach_out.html">Reach Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- mobile slide in menu -->
+    <div class="offcanvas offcanvas-end text-bg-secondary-subtle" id="mobileNav" style="max-width: 280px;">
+
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">SafeSpace</h5>
+        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"></button>
+      </div>
+
+      <div class="offcanvas-body" style="
+          scrollbar-width: thin;
+          scrollbar-color: #1f2a44 transparent;
+        ">
+        <ul class="navbar-nav gap-2">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="get_support.html">Get Support</a></li>
+          <li><a class="nav-link" href="safe_space.html">Safe Space</a></li>
+          <li><a class="nav-link btn" style="background:#1f2a44;color:#fff;" href="learn.html">Learn</a></li>
+          <li>
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          <li><a class="nav-link" href="reach_out.html">Reach Out</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- BANNER SLIDESHOW -->
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('media/Banner-1.png');">
+        </div>
+        <div class="carousel-item" style="background-image: url('media/Banner.webp');">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <hr>
+
+    <div class="container">
+
+      <!-- PAGE INTRO -->
+      <div>
+        <h1 class="fw-bold" style="font-weight:bold;margin-left:35%;">Learn & Understand</h1>
+        <p style="margin-left:6%;text-align: center;">
+          Trauma-informed education for survivors and supporters.
+          Learning helps create safer spaces and prevent harm.
+        </p>
+      </div>
+    </div>
+    <br><br><br>
+
+    <!-- AWARENESS & PREVENTION -->
+    <section class="mb-5 reveal">
+      <div class="container">
+
+        <h2 class="fw-semibold mb-4 text-center">
+          Awareness & Prevention
+        </h2>
+
+        <div class="row align-items-center g-4">
+
+          <!-- IMAGE -->
+          <div class="col-lg-6 text-center">
+            <img src="media/education-1.jpg" class="img-fluid awareness-img" alt="Awareness and prevention">
+          </div>
+
+          <!-- TEXT CONTENT -->
+          <div class="col-lg-6">
+            <div class="p-3 p-md-4 bg-white rounded-4 shadow-sm">
+
+              <p class="text-muted mb-3">
+                Sexual harassment is any unwanted behavior of a sexual nature that
+                makes someone feel uncomfortable, unsafe, or disrespected.
+              </p>
+
+              <div class="row g-4">
+
+                <!-- COLUMN 1 -->
+                <div class="col-md-6">
+                  <h5 class="fw-semibold mb-3">What It Can Look Like</h5>
+                  <ul class="list-unstyled prevention-list">
+                    <li>✔ Sexual comments, jokes, or messages</li>
+                    <li>✔ Unwanted touching or physical contact</li>
+                    <li>✔ Sexual images or gestures without consent</li>
+                    <li>✔ Staring or invading personal space</li>
+                  </ul>
+                </div>
+
+                <!-- COLUMN 2 -->
+                <div class="col-md-6">
+                  <h5 class="fw-semibold mb-3">Important to Remember</h5>
+                  <ul class="list-unstyled prevention-list">
+                    <li>✔ Consent must be clear and ongoing</li>
+                    <li>✔ Silence does not mean agreement</li>
+                    <li>✔ Harassment is never the survivor’s fault</li>
+                    <li>✔ Support and reporting can prevent future harm</li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <!-- FOOT NOTE -->
+              <p class="small text-muted mt-4">
+                Creating awareness builds respectful communities and helps protect
+                everyone’s dignity and safety.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PROTECTING PRIVATE AREAS EDUCATION -->
+    <section class="mb-5 reveal">
+      <div class="container ">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10">
+            <div class="bg-info-subtle rounded-4 shadow-sm p-4 p-md-5 text-center ">
+
+              <h2 class="fw-semibold mb-3 text-teal">
+                Protect Your Private Areas
+              </h2>
+
+              <p class="text-muted mb-4">
+                Everyone has private areas. Learning about body boundaries
+                helps children and survivors stay safe and confident.
+              </p>
+
+              <div class="row align-items-center g-4">
+                <!-- IMAGE -->
+                <div class="col-md-6">
+                  <img src="media/educate-1.avif" class="img-fluid rounded-4 soft-float"
+                    alt="Protect private areas illustration">
+                </div>
+
+                <!-- EDUCATION POINTS -->
+                <div class="col-md-6 text-start">
+                  <ul class="list-unstyled prevention-list">
+                    <li>✔ Private parts belong only to you</li>
+                    <li>✔ You can say <strong>No</strong> anytime</li>
+                    <li>✔ Trusted adults should be told if you feel unsafe</li>
+                    <li>✔ Your body deserves respect</li>
+                  </ul>
+                </div>
+              </div>
+
+              <p class="small text-muted mt-4">
+                Always trust your feelings and speak up if something feels wrong.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+
+    <!-- SUPPORTING SURVIVORS -->
+    <section class="mb-5 reveal" style="text-align: center;">
+      <h2 class="fw-semibold mb-3">Supporting Survivors</h2>
+      <p class="text-muted col-md-8 mb-4" style="margin-left: 17%;">
+        Support begins with listening, patience, and informed care.
+      </p>
+
+      <!-- VIDEOS -->
+      <div class="row g-4">
+        <!-- Video 1 -->
+        <div class="col-md-6 video-box">
+          <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/i3ku5nx4tMU?si=npENBQEUjTfit-SL"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="col-md-6 video-box">
+          <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1Evwgu369Jw?si=2XiJNb0huFxITmy8"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <!-- Video 3: Encourage Survivors -->
+        <div class="col-md-6 video-box">
+          <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oawtqQU-rJU?si=L3wh97r1DqgTsYSz"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <!-- Video 4: Medical Help -->
+        <div class="col-md-6 video-box">
+          <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yYQqtmkfFDE?si=9cwrPnFoFp6j5PQo"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+
+    <!-- SELF CARE -->
+    <section>
+      <h2 class="fw-semibold mb-3" style="text-align: center;">Self-Care for Survivors</h2>
+      <p class="text-muted col-md-8 mb-4" style="margin-left: 30%;">
+        You deserve care, rest, and compassion.
+        Click each card to learn gentle self-care practices.
+      </p>
+
+      <div class="row g-4">
+        <!-- CARD -->
+        <div class="col-md-4">
+          <div class="selfcare-card" onclick="toggleCard(this)">
+            <img src="media/breathing-exercise.webp" alt="Breathing exercise">
+            <div class="card-content">
+              <h5>Grounding & Breathing</h5>
+              <p class="hidden-text">
+                Slow breathing helps regulate your nervous system
+                and reduce anxiety.
+              </p>
+              <button class="btn btn-outline-teal btn-sm">Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="col-md-4">
+          <div class="selfcare-card" onclick="toggleCard(this)">
+            <img src="media/journaling.jpg" alt="Journaling">
+            <div class="card-content">
+              <h5>Private Journaling</h5>
+              <p class="hidden-text">
+                Writing thoughts privately can help release emotions
+                without pressure.
+              </p>
+              <button class="btn btn-outline-teal btn-sm">Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="col-md-4">
+          <div class="selfcare-card" onclick="toggleCard(this)">
+            <img src="media/rest.webp" alt="Rest">
+            <div class="card-content">
+              <h5>Rest & Safety</h5>
+              <p class="hidden-text">
+                Healing takes time. Rest and routine support recovery.
+              </p>
+              <button class="btn btn-outline-teal btn-sm">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADDITIONAL SELF CARE -->
+      <div class="row g-4 mt-3">
+        <!-- CARD: Mindfulness -->
+        <div class="col-md-4">
+          <div class="selfcare-card" onclick="toggleCard(this)">
+            <img src="media/meditation.jpeg" alt="Mindfulness exercise">
+            <div class="card-content">
+              <h5>Mindfulness & Meditation</h5>
+              <p class="hidden-text">
+                Mindfulness helps reduce stress and brings attention to the present moment.
+              </p>
+              <button class="btn btn-outline-teal btn-sm">Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD: Creative Expression -->
+        <div class="col-md-4">
+          <div class="selfcare-card" onclick="toggleCard(this)">
+            <img src="media/create.jpeg" alt="Creative expression">
+            <div class="card-content">
+              <h5>Creative Expression</h5>
+              <p class="hidden-text">
+                Painting, music, or crafts can help process feelings safely and express emotions.
+              </p>
+              <button class="btn btn-outline-teal btn-sm">Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD: Nature & Movement -->
+        <div class="col-md-4">
+          <div class="selfcare-card" onclick="toggleCard(this)">
+            <img src="media/nature.avif" alt="Nature walk">
+            <div class="card-content">
+              <h5>Nature & Movement</h5>
+              <p class="hidden-text">
+                Walking, stretching, or spending time outside can uplift your mood and promote
+                healing.
+              </p>
+              <button class="btn btn-outline-teal btn-sm">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-light text-center py-4 mt-5">
+      © 2026 SafeSpace | All Rights Reserved
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
